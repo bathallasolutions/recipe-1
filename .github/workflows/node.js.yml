@@ -40,6 +40,6 @@ jobs:
         ECR_REPOSITORY: docker_nodejs_demo
         IMAGE_TAG: nodejs_demo_image
       run: |
-        docker build . -f devops/docker/dockerfile.local -t recipe-1
+        docker build . -f /home/ubuntu/actions-runner/_work/recipe-1/recipe-1/devops/docker/dockerfile.local -t recipe-1
         docker tag recipe-1:latest 105245816529.dkr.ecr.us-east-2.amazonaws.com/recipe-1:latest 
         docker push 105245816529.dkr.ecr.us-east-2.amazonaws.com/recipe-1:latest
