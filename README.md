@@ -49,7 +49,7 @@ docker build . -f devops/docker/dockerfile.local -t recipe-1
 docker images | grep recipe-1  
 docker run -p 3011:3000 -d recipe-1      
 
-// test
+// test1
 
 tutorial: https://jsramblings.com/dockerizing-a-react-app/  
 example: https://github.com/vercel/next.js/tree/canary/examples/with-docker  
